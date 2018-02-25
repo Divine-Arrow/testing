@@ -193,8 +193,7 @@ nav {
 .ui h4,
 .software_deveopment h4 {
     text-transform: uppercase;
-    /*font-size: 1.1rem;*/
-    font-size: 1.5vh;
+    font-size: 1.1rem;
     color: #2e2e2e;
     text-align: center;
     margin-top: 7%;
@@ -205,8 +204,7 @@ nav {
 .ui p,
 .software_deveopment p {
     text-align: center;
-   /* font-size: 13px;*/
-    font-size: 1vh;
+    font-size: 13px;
     margin-bottom: 12%;
     padding-right: 6.6%;
     padding-left: 6.6%;
@@ -303,7 +301,7 @@ nav {
     height: 100%;
 }
 
-.team img:hover,
+.team_wrapper img:hover,
 .team_wrapper span:hover ~ img {
     /*box-shadow: 0px 16px 15px -5px #616161;*/
     box-shadow: 5px 22px 60px 0px #959595;
@@ -311,11 +309,11 @@ nav {
     filter: gray;
     /* for IE5+ */
     -webkit-filter: grayscale(1);
+    transition: all 0.5s 0.1s cubic-bezier(0.53, -0.62, 0.46, 1.76);
     /* chrome */
 }
 
 .team_wrapper span {
-    display: block;
     background-color: rgba(255, 255, 255, 0.6);
     opacity: 0;
     width: 100%;
@@ -344,6 +342,7 @@ nav {
     display: inline-block;
     margin: auto;
     box-shadow: none;
+    z-index: 1;
     margin-left: 5%;
     /*cursor: pointer;*/
 }
@@ -357,18 +356,23 @@ nav {
 }
 
 .social {
-    max-width: 70%;
+    max-width: 80%;
     margin: auto;
     font-family: 'montserrat', sans-serif;
 }
 
 .social h3 {
+    color: rgba(0, 0, 0, 0.84);
     font-size: 1.5vw;
     text-align: center;
     margin-top: 6%;
     margin-bottom: 6%;
     text-transform: capitalize;
+    letter-spacing: 0.8px;
+    word-spacing: 5px;
 }
+
+
 
 .facebook:hover {
     content: url('images/icons/facebook2.png');
